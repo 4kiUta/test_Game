@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- HE DIDNT CREATE THE DOCTYPE -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Game</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- GOOGLE 2p FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- <script src="/Users/alex/Downloads/gsap-public/minified/gsap.min.js"></script> -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./data/attacks.js" defer></script>
+    <script src="./data/monsters.js" defer></script>
+    
+    <script src="./data/audio.js" defer></script>
+    <script src="./data/battleZones.js" defer></script>
+    <script src="./data/collisions.js" defer></script>
+    <script src="./src/Boundary.js" defer></script>
+    <script src="./src/Monster.js" defer></script>
+    <script src="./src/Player.js" defer></script>
+    <script src="./src/Sprite.js" defer></script>
+
+    <script src="./src/battleScene.js" defer></script>
+    <script src="./src/index.js" defer></script>
+
+
+
+</head>
+
+<body>
+    <div id="topDiv" class="game-section">
+        <!--Div that makes the flash transitions -->
+        <div id="overlappingDiv"></div>
+
+
+        <canvas id="game"></canvas>
+
+
+
+        <div id="userInterface">
+            <!-- helth status bar for enemy-->
+            <div id="statusInfoBad">
+                <h1 class="name">Dragon</h1>
+
+                <div class="health">
+                    <div class="health-damage">
+
+                    </div>
+                    <div id="enemyHealthBar" class="health-full">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- health status bar for user-->
+            <div id="statusInfoGood">
+                <h1 class="name">US</h1>
+
+                <div class="health">
+                    <div class="health-damage">
+
+                    </div>
+                    <div id="playerHealthBar" class="health-full">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="interfaceSelection">
+                <div id="dialgueBox">TESTESTESTEST</div>
+                <div id="attacksBox" class="attack-div">
+                    <!-- <button>Takle</button> -->
+                    <!-- <button>Fireball</button> -->
+                    <!-- <button>Attack 3</button>
+                <button>Attack 4</button> -->
+
+                </div>
+                <div class="attack-info">
+                    <h1 id="attackType">Attack type</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
